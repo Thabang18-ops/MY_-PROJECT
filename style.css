@@ -1,0 +1,1024 @@
+/* CSS RESET
+   Removes the browser's default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CUSTOM SCROLLBAR
+   Changes the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* SCROLLBAR TRACK
+   Customizes the background/track of the scrollbar */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(249, 249, 249);
+    border-radius: 10px;
+}
+
+
+/* SCROLLBAR THUMB
+   Customizes the part of the scrollbar that you drag */
+::-webkit-scrollbar-thumb {
+    background: rgb(136, 120, 91);
+    border-radius: 10px;
+}
+
+/* HEADER
+   Styles the top section of the website */
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+
+/* NAVIGATION LIST
+   Removes the bullets and spaces the navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* NAVIGATION LINKS
+   Changes the appearance of the links */
+nav ul li a {
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* NAVIGATION HOVER
+   Changes the link when the mouse moves over it */
+nav ul li a:hover {
+    color: rgb(136, 120, 91);
+}
+
+
+/* HERO SECTION
+   Creates the main welcome area of the website */
+#hero-section {
+    min-height: 65vh;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* HERO CONTENT
+   Controls the content inside the hero section */
+.hero-content {
+    max-width: 800px;
+    padding: 40px;
+}
+
+
+/* HERO SMALL HEADING */
+.hero-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+/* HERO MAIN HEADING */
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+/* HERO PARAGRAPH */
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* CALL-TO-ACTION BUTTONS */
+
+.call-to-action-btn {
+    margin-top: 25px;
+}
+
+
+.call-to-action-btn a {
+    display: inline-block;
+    padding: 14px 28px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: rgb(136, 120, 91);
+    color: white;
+    border: 2px solid rgb(136, 120, 91);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+
+/* BUTTON HOVER */
+
+.call-to-action-btn a:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* BUTTON HOVER */
+.call-to-action-btn a:hover {
+    background-color: rgb(100, 85, 60);
+}
+
+
+/* HERO TEXT */
+.hero-content h3,
+.hero-content h2,
+.hero-content p {
+    color: white;
+}
+
+
+/* ABOUT VITAPURA SECTION */
+
+#brief-info {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+/* ABOUT SECTION HEADING */
+
+#brief-info h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+/* ABOUT SECTION TEXT */
+
+.summary-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* ABOUT SECTION PARAGRAPHS */
+
+.summary-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* HEADER LAYOUT */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+}
+
+
+/* VITAPURA LOGO */
+
+.logo h1 {
+    font-size: 30px;
+    color: rgb(136, 120, 91);
+}
+
+
+/* NAVIGATION */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+
+/* NAVIGATION LINKS */
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* NAVIGATION HOVER */
+
+nav ul li a:hover {
+    color: rgb(136, 120, 91);
+}
+
+
+/* TABLET AND MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* NAVIGATION */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    /* HERO */
+    #hero-section {
+        min-height: 70vh;
+    }
+
+    .hero-content {
+        padding: 25px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* BUTTONS */
+    .call-to-action-btn a {
+        display: block;
+        margin: 10px auto;
+        max-width: 220px;
+    }
+
+    /* ABOUT SECTION */
+    #brief-info {
+        padding: 40px 20px;
+    }
+
+    #brief-info h2 {
+        font-size: 28px;
+    }
+
+    .summary-text p {
+        font-size: 16px;
+    }
+
+        /* SERVICES MOBILE LAYOUT */
+
+    .service-list {
+    grid-template-columns: 1fr !important;
+
+}
+    
+    .product-card {
+       padding: 25px;
+}
+
+    .service-card {
+        padding: 25px;
+    }
+
+
+        /* ENQUIRY MOBILE */
+
+    #enquiry-form-section {
+        padding: 40px 20px;
+    }
+
+    #enquiryForm {
+        padding: 25px;
+    }
+
+    .enquiry-content h2 {
+        font-size: 32px;
+    }
+
+        /* FEATURED SERVICES MOBILE */
+
+    .featured-service-list {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-service-card {
+        padding: 25px;
+    }
+
+        /* TESTIMONIALS MOBILE */
+
+    .testimonial-list {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 25px;
+    }
+
+        /* WHY CHOOSE MOBILE */
+
+    .reasons-list {
+        grid-template-columns: 1fr;
+    }
+
+    .reason-card {
+        padding: 25px;
+    }
+}
+
+
+
+/* ABOUT PAGE HERO */
+
+#about-hero {
+    min-height: 45vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.about-content {
+    padding: 30px;
+    color: white;
+}
+
+
+.about-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.about-content p {
+    font-size: 18px;
+}
+
+
+
+/* SERVICES PAGE HERO */
+
+#services-hero {
+    min-height: 45vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.services-content {
+    padding: 30px;
+    color: white;
+}
+
+
+.services-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.services-content p {
+    font-size: 18px;
+}
+
+
+/* SERVICES INFORMATION */
+
+#services-info {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+#services-info > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+/* SERVICE CARDS */
+
+.service-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.service-card {
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+}
+
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* SERVICE CARD HOVER */
+
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+
+/* PRODUCTS PAGE HERO */
+
+#products-hero {
+    min-height: 45vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.products-content {
+    padding: 30px;
+    color: white;
+}
+
+
+.products-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.products-content p {
+    font-size: 18px;
+}
+
+
+/* PRODUCTS INFORMATION */
+
+#products-info {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+#products-info > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+/* PRODUCT CARDS */
+
+.product-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.product-card {
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+}
+
+
+.product-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+.product-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* PRODUCT CARD HOVER */
+
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+
+/* ENQUIRY PAGE HERO */
+
+#enquiry-hero {
+    min-height: 40vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.enquiry-content {
+    padding: 30px;
+    color: white;
+}
+
+.enquiry-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.enquiry-content p {
+    font-size: 18px;
+}
+
+
+/* ENQUIRY FORM */
+
+#enquiry-form-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#enquiry-form-section > h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+#enquiryForm {
+    background-color: rgb(250, 250, 250);
+    padding: 35px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+}
+
+
+/* FORM GROUPS */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+/* FORM INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* INPUT FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 2px solid rgb(136, 120, 91);
+}
+
+
+/* SUBMIT BUTTON */
+
+#enquiryForm button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(136, 120, 91);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* SUBMIT BUTTON HOVER */
+
+#enquiryForm button:hover {
+    opacity: 0.85;
+}
+
+
+
+/* CONTACT PAGE HERO */
+
+#contact-hero {
+    min-height: 40vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-content {
+    padding: 30px;
+    color: white;
+}
+
+.contact-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-content p {
+    font-size: 18px;
+}
+
+
+/* CONTACT INFORMATION */
+
+#contact-info {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact-info > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+/* CONTACT CARDS */
+
+.contact-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+}
+
+.contact-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* CONTACT ACTION */
+
+.contact-action {
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 35px;
+}
+
+.contact-action h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-action p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.contact-action a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: rgb(136, 120, 91);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-action a:hover {
+    opacity: 0.85;
+}
+
+
+/* FEATURED SERVICES */
+
+#featured-services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#featured-services > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.featured-service-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.featured-service-card {
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+}
+
+.featured-service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.featured-service-card p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.featured-service-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(136, 120, 91);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.featured-service-card a:hover {
+    opacity: 0.85;
+}
+
+
+/* TESTIMONIALS */
+
+#testimonials {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#testimonials > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.testimonial-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.testimonial-card {
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-card h3 {
+    font-size: 16px;
+}
+
+
+
+/* WHY CHOOSE VITAPURA */
+
+#why-choose {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#why-choose > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.reasons-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.reason-card {
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+}
+
+.reason-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.reason-card p {
+    line-height: 1.6;
+}
+
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(136, 120, 91);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+
+
+/* SOCIAL LINKS */
+
+.social-links {
+    max-width: 700px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.social-links h2 {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 18px;
+    background-color: rgb(136, 120, 91);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-links a:hover {
+    opacity: 0.85;
+}
+
+
+/* MAP */
+
+.map-section {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.map-section h2 {
+    margin-bottom: 20px;
+}
+
+.map-section iframe {
+    width: 100%;
+    border-radius: 8px;
+}
